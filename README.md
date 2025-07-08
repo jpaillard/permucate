@@ -9,9 +9,10 @@
 <a  href="https://denis-engemann.de/"  target="_blank">Denis Engemann</a>
 <br>
 
-<a  href="https://arxiv.org/abs/2408.13002">[Paper]</a> &emsp;&emsp; 
 
+[![paper:arXiv:2408.13002](http://img.shields.io/badge/DOI-arXiv:2408.13002-B31B1B.svg)](https://doi.org/10.48550/arXiv.2408.13002)
 </div>
+
 
 ## Citation
 ```
