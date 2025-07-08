@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pernucate"
+version = "0.1"
+requires-python = ">=3.12"
+
+dependencies = [
+  "econml",
+  "scikit-learn",
+  "catenets",
+  "scipy",
+  "tqdm",
+  "tabpfn"
+]
+authors = [
+  {name = "Joseph Paillard", email = "joseph.paillard@roche.com"},
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest"
+]

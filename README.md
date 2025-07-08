@@ -13,9 +13,32 @@
 [![paper:arXiv:2408.13002](http://img.shields.io/badge/DOI-arXiv:2408.13002-B31B1B.svg)](https://doi.org/10.48550/arXiv.2408.13002)
 </div>
 
+## Installation
+
+```bash
+pip install -e .
+```
+
+### Dependencies
+```bash
+econml
+scikit-learn
+catenets
+scipy
+tqdm
+tabpfn
+```
+
+## Repository Structure
+```text
+permucate/    # Core methods and main implementation
+tests/        # Unit tests for core methods
+scripts/      # Python scripts to reproduce the paper's experiments
+```
 
 ## Citation
-```
+If you use this code in your research, please cite our paper:
+```bibtex
 @inproceedings{
     paillard2025measuring,
     title={Measuring Variable Importance in Heterogeneous Treatment Effects with Confidence},

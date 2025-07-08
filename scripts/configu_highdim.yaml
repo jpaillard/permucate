@@ -1,0 +1,38 @@
+output_dir: ./fig_3_linear_100_super
+vim_methods: 
+  - loco
+  - permucate
+n_list: 
+  # - 100
+  - 200
+  - 400
+  - 800
+  - 1600
+  - 3200
+  - 6400
+  - 12800
+meta_learners:
+  - DR
+models:
+  - super_learner
+n_perm: 50
+n_seeds: 100
+n_splits_learner: 5
+n_splits_simul: 5
+scoring: pseudo_outcome_risk
+dgp: high_dim
+dgp_params:
+  d: 100
+  d_imp_tau: 10
+  d_imp_a: 10
+  d_imp_mu: 10
+  var_corr: 0.3
+  effect_size: 0.8
+  treatment_ratio: 0.5
+  link_fn_name: poly
+  link_fn_kwargs: 
+    degree: 3
+  y_noise: 0.05
+return_coefs: False
+n_jobs: 1
+n_jobs_inner: 5

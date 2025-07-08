@@ -1,0 +1,28 @@
+output_dir: ./results_cv
+vim_methods: 
+  - loco
+  - permucate
+n_list: 
+  - 100
+  - 200
+  - 400
+  - 800
+  - 1600
+  - 3200
+  - 6400
+  - 12800
+meta_learners:
+  - DR
+models:
+  - linear
+n_perm: 50
+n_seeds: 100
+n_splits_learner: 5
+n_splits_simul: 5
+scoring: pseudo_outcome_risk
+dgp: hines
+dgp_params:
+  dgp_id: 3
+return_coefs: True
+n_jobs: 20
+n_jobs_inner: 1
